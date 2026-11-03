@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+
+  --color-primary: #99f7ff;
+  --color-primary-container: #00f1fe;
+  --color-secondary: #ff8a00;
+  --color-background: #0b0e11;
+  --color-surface: #161a1e;
+  --color-outline: #45484c;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-slate-200 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .grid-pattern {
+    background-image: linear-gradient(to right, rgba(69, 72, 76, 0.1) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(69, 72, 76, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .scanline {
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 242, 255, 0.02) 50%);
+    background-size: 100% 4px;
+  }
+}

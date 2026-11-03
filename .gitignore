@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.next/
+*.db
+*.sqlite*
+logs/
+outputs/
+.venv/
+venv/
+__pycache__/
+.claude/
